@@ -544,3 +544,485 @@
         </a>`),k("#economy",".return-system","\u0425\u043E\u0447\u0443 \u043E\u0442\u043A\u0440\u044B\u0442\u044C \u0442\u0430\u043A\u043E\u0439 \u043A\u043E\u043F\u0438\u0446\u0435\u043D\u0442\u0440"),document.querySelector("#system > [data-lead-cta]")?.remove(),k("#launch",".launch-system-milestone","\u041E\u0431\u0441\u0443\u0434\u0438\u0442\u044C \u0437\u0430\u043F\u0443\u0441\u043A \u0432 \u043C\u043E\u0451\u043C \u0433\u043E\u0440\u043E\u0434\u0435");let s=document.querySelector("#selection .partnership-cta");s&&s.dataset.leadConverted!=="true"&&(s.dataset.leadConverted="true",s.classList.add("partnership-cta--lead"),s.innerHTML=`
         <div><span>\u0415\u0441\u043B\u0438 \u044D\u0442\u043E \u043F\u0440\u043E \u0432\u0430\u0441</span><strong>\u041F\u043E\u0437\u043D\u0430\u043A\u043E\u043C\u0438\u043C\u0441\u044F \u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u043C \u0432\u0430\u0448 \u0433\u043E\u0440\u043E\u0434.</strong></div>
         <a href="#${t}" data-scroll-to-application>\u041F\u0435\u0440\u0435\u0439\u0442\u0438 \u043A \u043F\u0435\u0440\u0432\u043E\u043C\u0443 \u0448\u0430\u0433\u0443 <i aria-hidden="true">\u2193</i></a>`);let p=document.querySelector("#faq");p&&!document.getElementById(t)&&p.insertAdjacentHTML("afterend",v),Z(),M()};document.addEventListener("click",e=>{if(!(e.target instanceof Element?e.target:null)?.closest("[data-scroll-to-application]"))return;let p=document.getElementById(t);p&&(e.preventDefault(),p.scrollIntoView({behavior:i()?"auto":"smooth",block:"start"}),window.matchMedia("(min-width: 761px) and (pointer: fine)").matches&&window.setTimeout(()=>p.querySelector("input[type='tel']")?.focus({preventScroll:!0}),i()?0:650))});let j=0,F=()=>{j||(j=window.requestAnimationFrame(()=>{j=0,R()}))};document.readyState==="loading"?document.addEventListener("DOMContentLoaded",R,{once:!0}):R(),new MutationObserver(F).observe(document.body,{childList:!0,subtree:!0})})();var Et=()=>{let t=document.querySelector("#franchise-hero"),i=t?.querySelector(".visual-panel"),y=t?.querySelector(".system-badge"),v=t?.querySelector(".system-badge-label"),k=t?.querySelector(".system-map");if(!t||!i||!y||!v||!k||y.dataset.tildaBound==="true")return;y.dataset.tildaBound="true";let o=M=>{i.classList.toggle("system-off",!M),k.setAttribute("aria-hidden",String(!M)),y.setAttribute("aria-pressed",String(M)),y.setAttribute("aria-label",M?"\u0412\u044B\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0441\u0438\u0441\u0442\u0435\u043C\u0443 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F":"\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0441\u0438\u0441\u0442\u0435\u043C\u0443 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F"),v.textContent=M?"\u0421\u0438\u0441\u0442\u0435\u043C\u0430 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442":"\u0421\u0438\u0441\u0442\u0435\u043C\u0430 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0432\u044B\u043A\u043B\u044E\u0447\u0435\u043D\u0430"};y.addEventListener("click",()=>o(y.getAttribute("aria-pressed")!=="true")),requestAnimationFrame(()=>t.classList.add("hero-motion-ready"))},Tt=()=>{document.querySelectorAll(".rasp-tilda-block").forEach(o=>{o.closest(".t-rec")?.classList.add("rasp-tilda-record")});let t=document.querySelector("[data-scroll-progress]");t||(t=document.createElement("div"),t.className="site-scroll-progress",t.dataset.scrollProgress="true",t.setAttribute("aria-hidden","true"),document.body.append(t));let i=document.querySelector("[data-back-to-top]");if(i||(i=document.createElement("button"),i.className="site-back-to-top",i.type="button",i.dataset.backToTop="true",i.setAttribute("aria-label","\u0412\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F \u0432 \u043D\u0430\u0447\u0430\u043B\u043E \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B"),i.innerHTML='<span aria-hidden="true">\u2191</span>',document.body.append(i)),i.dataset.tildaBound==="true")return;i.dataset.tildaBound="true";let y=0,v=()=>{y=0;let o=Math.max(1,document.documentElement.scrollHeight-innerHeight);t.style.setProperty("--site-scroll",String(Math.min(1,Math.max(0,scrollY/o)))),i.classList.toggle("is-visible",scrollY>Math.min(900,innerHeight*.9))},k=()=>{y||(y=requestAnimationFrame(v))};addEventListener("scroll",k,{passive:!0}),addEventListener("resize",k,{passive:!0}),i.addEventListener("click",()=>scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"})),v()},ht=()=>{window.__raspechatkaTildaReady||(window.__raspechatkaTildaReady=!0,Tt(),Et(),vt(),bt())};document.readyState==="loading"?document.addEventListener("DOMContentLoaded",ht,{once:!0}):ht();})();
+
+/* === RASPECHATKA.OS FIX: 8 modules + delayed Tilda init === */
+(() => {
+  "use strict";
+
+  var F=[{name:"\u0410\u043D\u0430\u043B\u0438\u0442\u0438\u043A\u0430",eyebrow:"\u0412\u0441\u0435 \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u0438 \u0442\u043E\u0447\u043A\u0438",headline:"\u0412\u0435\u0441\u044C \u0431\u0438\u0437\u043D\u0435\u0441 \u2014 \u043D\u0430 \u043E\u0434\u043D\u043E\u043C \u044D\u043A\u0440\u0430\u043D\u0435.",summary:"\u041F\u0440\u043E\u0434\u0430\u0436\u0438, \u043A\u043B\u0438\u0435\u043D\u0442\u044B, \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u043A\u0438, \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u043E, \u0441\u043A\u043B\u0430\u0434 \u0438 \u0444\u0438\u043D\u0430\u043D\u0441\u044B \u0441\u043E\u0431\u0440\u0430\u043D\u044B \u0432 \u0435\u0434\u0438\u043D\u043E\u043C \u0434\u0430\u0448\u0431\u043E\u0440\u0434\u0435 \u0441 \u0418\u0418-\u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u043E\u043C.",points:["\u0412\u0438\u0434\u0438\u0442 \u043E\u0442\u043A\u043B\u043E\u043D\u0435\u043D\u0438\u044F","\u041E\u0431\u044A\u044F\u0441\u043D\u044F\u0435\u0442 \u043F\u0440\u0438\u0447\u0438\u043D\u044B","\u041F\u043E\u0434\u0441\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u0440\u0435\u0448\u0435\u043D\u0438\u0435"],result:"\u0412\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u044F\u0435\u0442\u0435 \u043F\u043E \u0444\u0430\u043A\u0442\u0430\u043C \u0438 \u0437\u0430\u043C\u0435\u0447\u0430\u0435\u0442\u0435 \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u0443 \u0440\u0430\u043D\u044C\u0448\u0435, \u0447\u0435\u043C \u043E\u043D\u0430 \u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0441\u044F \u0443\u0431\u044B\u0442\u043A\u043E\u043C.",metric:"6 \u043A\u043E\u043D\u0442\u0443\u0440\u043E\u0432",metricLabel:"\u0432 \u043E\u0434\u043D\u043E\u043C \u0434\u0430\u0448\u0431\u043E\u0440\u0434\u0435",screen:"\u0410\u043D\u0430\u043B\u0438\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0434\u0430\u0448\u0431\u043E\u0440\u0434"},{name:"\u041A\u043E\u043C\u0430\u043D\u0434\u0430 / \u043C\u043E\u0442\u0438\u0432\u0430\u0446\u0438\u044F",eyebrow:"\u041F\u0443\u0442\u044C \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u043A\u0430 \u0438 \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442",headline:"\u041A\u043E\u043C\u0430\u043D\u0434\u0430 \u0443\u043F\u0440\u0430\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u043E\u0442 \u0430\u043D\u043A\u0435\u0442\u044B \u0434\u043E \u043F\u0440\u0435\u043C\u0438\u0438.",summary:"\u0421\u0438\u0441\u0442\u0435\u043C\u0430 \u043E\u0431\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u0435\u0442 \u0430\u043D\u043A\u0435\u0442\u044B, \u0432\u0435\u0434\u0451\u0442 \u0441\u043E\u0431\u0435\u0441\u0435\u0434\u043E\u0432\u0430\u043D\u0438\u044F \u0438 \u0441\u0442\u0430\u0436\u0438\u0440\u043E\u0432\u043A\u0438, \u0444\u043E\u0440\u043C\u0438\u0440\u0443\u0435\u0442 \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B, \u0433\u0440\u0430\u0444\u0438\u043A\u0438, \u0437\u0430\u0440\u043F\u043B\u0430\u0442\u044B \u0438 \u0438\u0433\u0440\u043E\u0432\u044B\u0435 \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u044B.",points:["\u041D\u0430\u0439\u043C \u043F\u043E \u044D\u0442\u0430\u043F\u0430\u043C","\u0413\u0440\u0430\u0444\u0438\u043A \u0438 \u0437\u0430\u0440\u043F\u043B\u0430\u0442\u0430","\u041E\u043D\u043B\u0430\u0439\u043D-\u0438\u0433\u0440\u0430 \u0438 \u043F\u0440\u0435\u043C\u0438\u0438"],result:"\u041F\u0440\u0430\u0432\u0438\u043B\u0430 \u043F\u0440\u043E\u0437\u0440\u0430\u0447\u043D\u044B: \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u043A \u0432\u0438\u0434\u0438\u0442 \u0441\u0432\u043E\u0439 \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442, \u0430 \u043F\u0430\u0440\u0442\u043D\u0451\u0440 \u2014 \u0432\u043A\u043B\u0430\u0434 \u043A\u0430\u0436\u0434\u043E\u0433\u043E \u0447\u0435\u043B\u043E\u0432\u0435\u043A\u0430.",metric:"\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438",metricLabel:"\u043E\u0442 \u0433\u0440\u0430\u0444\u0438\u043A\u0430 \u0434\u043E \u043F\u0440\u0435\u043C\u0438\u0438",screen:"\u0418\u0433\u0440\u0430 \u0438 \u043F\u0440\u0435\u043C\u0438\u0438 \u043A\u043E\u043C\u0430\u043D\u0434\u044B"},{name:"\u0411\u0430\u0437\u0430 \u0437\u043D\u0430\u043D\u0438\u0439",eyebrow:"\u0417\u043D\u0430\u043D\u0438\u044F \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438 \u0432\u0441\u0435\u0433\u0434\u0430 \u0440\u044F\u0434\u043E\u043C",headline:"\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u043E\u0442\u0432\u0435\u0442 \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u0437\u0430 \u0441\u0435\u043A\u0443\u043D\u0434\u044B.",summary:"\u0418\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u0438, \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0430, \u0441\u0442\u0430\u043D\u0434\u0430\u0440\u0442\u044B \u0441\u0435\u0440\u0432\u0438\u0441\u0430 \u0438 \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435 \u0441\u043E\u0431\u0440\u0430\u043D\u044B \u0432 \u043E\u0434\u043D\u043E\u0439 \u0431\u0430\u0437\u0435 \u0441 \u0418\u0418-\u043F\u043E\u0438\u0441\u043A\u043E\u043C \u043F\u043E \u0440\u0430\u0431\u043E\u0447\u0438\u043C \u0432\u043E\u043F\u0440\u043E\u0441\u0430\u043C.",points:["\u041F\u043E\u0448\u0430\u0433\u043E\u0432\u044B\u0435 \u0438\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u0438","\u041E\u0431\u0443\u0447\u0435\u043D\u0438\u0435 \u043A\u043E\u043C\u0430\u043D\u0434\u044B","\u0418\u0418-\u043F\u043E\u0438\u0441\u043A \u0441 \u043E\u0442\u0432\u0435\u0442\u0430\u043C\u0438"],result:"\u041E\u043F\u044B\u0442 \u0441\u0435\u0442\u0438 \u043D\u0435 \u0445\u0440\u0430\u043D\u0438\u0442\u0441\u044F \u0432 \u0433\u043E\u043B\u043E\u0432\u0435 \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u044B\u0445 \u043B\u044E\u0434\u0435\u0439 \u2014 \u0438\u043C \u043C\u043E\u0436\u0435\u0442 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u043A\u0430\u0436\u0434\u044B\u0439 \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u043A.",metric:"24 / 7",metricLabel:"\u0434\u043E\u0441\u0442\u0443\u043F \u043A \u0437\u043D\u0430\u043D\u0438\u044F\u043C",screen:"\u041E\u0433\u043B\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0438 \u0418\u0418-\u043F\u043E\u0438\u0441\u043A"},{name:"\u0423\u043C\u043D\u0430\u044F \u043A\u0430\u0441\u0441\u0430",eyebrow:"\u041F\u0440\u043E\u0434\u0430\u0436\u0430 \u0432 \u043C\u043E\u043C\u0435\u043D\u0442 \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F",headline:"\u041A\u0430\u0441\u0441\u0430 \u043F\u043E\u043C\u043E\u0433\u0430\u0435\u0442 \u043F\u0440\u043E\u0434\u0430\u0432\u0430\u0442\u044C \u0431\u043E\u043B\u044C\u0448\u0435 \u0432 \u043A\u0430\u0436\u0434\u043E\u043C \u0437\u0430\u043A\u0430\u0437\u0435.",summary:"\u0412\u043E \u0432\u0440\u0435\u043C\u044F \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F \u0441\u0438\u0441\u0442\u0435\u043C\u0430 \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u043C\u0435\u043D\u0435\u0434\u0436\u0435\u0440\u0443 \u0443\u043C\u0435\u0441\u0442\u043D\u0443\u044E \u0434\u043E\u043F\u0440\u043E\u0434\u0430\u0436\u0443 \u0438 \u043F\u043E\u043C\u043E\u0433\u0430\u0435\u0442 \u043F\u043E\u0432\u044B\u0448\u0430\u0442\u044C \u0441\u0440\u0435\u0434\u043D\u0438\u0439 \u0447\u0435\u043A \u0431\u0435\u0437 \u043D\u0430\u0432\u044F\u0437\u0447\u0438\u0432\u043E\u0441\u0442\u0438.",points:["\u0420\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0430\u0446\u0438\u044F \u0432 \u043C\u043E\u043C\u0435\u043D\u0442 \u043F\u0440\u043E\u0434\u0430\u0436\u0438","\u0413\u043E\u0442\u043E\u0432\u044B\u0435 \u0441\u0446\u0435\u043D\u0430\u0440\u0438\u0438","\u041A\u043E\u043D\u0442\u0440\u043E\u043B\u044C \u0441\u0440\u0435\u0434\u043D\u0435\u0433\u043E \u0447\u0435\u043A\u0430"],result:"\u0420\u043E\u0441\u0442 \u043F\u0440\u043E\u0434\u0430\u0436 \u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0441\u044F \u0447\u0430\u0441\u0442\u044C\u044E \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u0430, \u0430 \u043D\u0435 \u0437\u0430\u0432\u0438\u0441\u0438\u0442 \u043E\u0442 \u043F\u0430\u043C\u044F\u0442\u0438 \u0438\u043B\u0438 \u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043D\u0438\u044F \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u043A\u0430.",metric:"\u0432\u044B\u0448\u0435 \u0447\u0435\u043A",metricLabel:"\u0432 \u043A\u0430\u0436\u0434\u043E\u0439 \u043F\u043E\u0434\u0445\u043E\u0434\u044F\u0449\u0435\u0439 \u043F\u0440\u043E\u0434\u0430\u0436\u0435",screen:"\u041A\u0430\u0441\u0441\u0430 \u0441 \u0440\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0430\u0446\u0438\u0435\u0439 \u0434\u043E\u043F\u0440\u043E\u0434\u0430\u0436\u0438"},{name:"\u0411\u0430\u0437\u0430 \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432",eyebrow:"\u041F\u043E\u0432\u0442\u043E\u0440\u043D\u044B\u0435 \u043F\u0440\u043E\u0434\u0430\u0436\u0438 \u0438 \u043B\u043E\u044F\u043B\u044C\u043D\u043E\u0441\u0442\u044C",headline:"\u0411\u0430\u0437\u0430 \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432 \u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0441\u044F \u0430\u043A\u0442\u0438\u0432\u043E\u043C \u0442\u043E\u0447\u043A\u0438.",summary:"\u0418\u0441\u0442\u043E\u0440\u0438\u044F \u043F\u043E\u043A\u0443\u043F\u043E\u043A, \u0441\u043A\u0438\u0434\u043A\u0438, \u0440\u0430\u0441\u0441\u044B\u043B\u043A\u0438 \u0438 \u043A\u043B\u0443\u0431\u043D\u0430\u044F \u0441\u0438\u0441\u0442\u0435\u043C\u0430 \u043F\u043E\u043C\u043E\u0433\u0430\u044E\u0442 \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0442\u044C \u043A\u043B\u0438\u0435\u043D\u0442\u0430 \u0441 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u043C \u0438 \u0441\u0432\u043E\u0435\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u043C \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u0435\u043C.",points:["\u0418\u0441\u0442\u043E\u0440\u0438\u044F \u043F\u043E\u043A\u0443\u043F\u043E\u043A","\u041A\u0430\u043B\u0435\u043D\u0434\u0430\u0440\u044C \u043F\u0440\u0430\u0437\u0434\u043D\u0438\u043A\u043E\u0432","\u0420\u0430\u0441\u0441\u044B\u043B\u043A\u0438 \u0438 \u043A\u043B\u0443\u0431"],result:"\u0421\u0438\u0441\u0442\u0435\u043C\u0430 \u0437\u043D\u0430\u0435\u0442, \u043A\u043E\u043C\u0443, \u043A\u043E\u0433\u0434\u0430 \u0438 \u0441 \u043A\u0430\u043A\u0438\u043C \u043F\u043E\u0432\u043E\u0434\u043E\u043C \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0438\u0442\u044C \u0432\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F.",metric:"\u043F\u043E\u0432\u0442\u043E\u0440\u043D\u043E",metricLabel:"\u043A\u043B\u0438\u0435\u043D\u0442 \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0441\u044F",screen:"\u041A\u0430\u043B\u0435\u043D\u0434\u0430\u0440\u044C \u043F\u0440\u0430\u0437\u0434\u043D\u0438\u043A\u043E\u0432 \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432"},{name:"\u0421\u043A\u043B\u0430\u0434 \u0438 \u0437\u0430\u043A\u0443\u043F\u043A\u0438",eyebrow:"\u041E\u0441\u0442\u0430\u0442\u043A\u0438 \u0438 \u0441\u043D\u0430\u0431\u0436\u0435\u043D\u0438\u0435",headline:"\u0417\u0430\u043A\u0443\u043F\u043A\u0430 \u0444\u043E\u0440\u043C\u0438\u0440\u0443\u0435\u0442\u0441\u044F \u0434\u043E \u0442\u043E\u0433\u043E, \u043A\u0430\u043A \u0447\u0442\u043E-\u0442\u043E \u0437\u0430\u043A\u043E\u043D\u0447\u0438\u0442\u0441\u044F.",summary:"\u041E\u0441\u0442\u0430\u0442\u043A\u0438, \u0440\u0430\u0441\u0445\u043E\u0434\u043D\u0438\u043A\u0438, \u0441\u043F\u0438\u0441\u0430\u043D\u0438\u044F, \u043C\u0438\u043D\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0435 \u0437\u0430\u043F\u0430\u0441\u044B \u0438 \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u0438 \u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u044B \u0441 \u043F\u043B\u0430\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0437\u0430\u043A\u0443\u043F\u043E\u043A.",points:["\u041C\u0438\u043D\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0435 \u043E\u0441\u0442\u0430\u0442\u043A\u0438","\u041A\u043E\u043D\u0442\u0440\u043E\u043B\u044C \u0441\u043F\u0438\u0441\u0430\u043D\u0438\u0439","\u0413\u043E\u0442\u043E\u0432\u044B\u0439 \u0441\u043F\u0438\u0441\u043E\u043A \u043A \u0437\u0430\u043A\u0443\u043F\u043A\u0435"],result:"\u0422\u043E\u0447\u043A\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0431\u0435\u0437 \u0432\u043D\u0435\u0437\u0430\u043F\u043D\u044B\u0445 \u043E\u0441\u0442\u0430\u043D\u043E\u0432\u043E\u043A, \u0441\u0440\u043E\u0447\u043D\u044B\u0445 \u043F\u0435\u0440\u0435\u043F\u043B\u0430\u0442 \u0438 \u043B\u0438\u0448\u043D\u0435\u0433\u043E \u0437\u0430\u043F\u0430\u0441\u0430.",metric:"\u0431\u0435\u0437 \u0441\u0442\u043E\u043F\u043E\u0432",metricLabel:"\u043C\u0430\u0442\u0435\u0440\u0438\u0430\u043B\u044B \u0432\u043E\u0432\u0440\u0435\u043C\u044F",screen:"\u0421\u043F\u0438\u0441\u043E\u043A \u043A \u0437\u0430\u043A\u0443\u043F\u043A\u0435"},{name:"\u0424\u0438\u043D\u0430\u043D\u0441\u044B",eyebrow:"\u0414\u0435\u043D\u044C\u0433\u0438 \u0438 \u043F\u043B\u0430\u043D-\u0444\u0430\u043A\u0442",headline:"\u041F\u0440\u0438\u0431\u044B\u043B\u044C \u0432\u0438\u0434\u043D\u043E \u0434\u043E \u0437\u0430\u043A\u0440\u044B\u0442\u0438\u044F \u043C\u0435\u0441\u044F\u0446\u0430.",summary:"\u0414\u043E\u0445\u043E\u0434\u044B, \u0440\u0430\u0441\u0445\u043E\u0434\u044B, \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u0435 \u0434\u0435\u043D\u0435\u0433, \u043F\u043B\u0430\u0442\u0451\u0436\u043D\u044B\u0439 \u043A\u0430\u043B\u0435\u043D\u0434\u0430\u0440\u044C \u0438 \u043F\u043B\u0430\u043D-\u0444\u0430\u043A\u0442 \u0441\u043E\u0431\u0440\u0430\u043D\u044B \u0432 \u043E\u0434\u043D\u043E\u043C \u0444\u0438\u043D\u0430\u043D\u0441\u043E\u0432\u043E\u043C \u043A\u043E\u043D\u0442\u0443\u0440\u0435.",points:["\u0414\u0432\u0438\u0436\u0435\u043D\u0438\u0435 \u0434\u0435\u043D\u0435\u0433","\u041F\u043B\u0430\u0442\u0451\u0436\u043D\u044B\u0439 \u043A\u0430\u043B\u0435\u043D\u0434\u0430\u0440\u044C","\u041F\u043B\u0430\u043D \u043F\u0440\u043E\u0442\u0438\u0432 \u0444\u0430\u043A\u0442\u0430"],result:"\u041F\u0430\u0440\u0442\u043D\u0451\u0440 \u043F\u043E\u043D\u0438\u043C\u0430\u0435\u0442 \u043D\u0435 \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u043A\u043E\u043B\u044C\u043A\u043E \u0434\u0435\u043D\u0435\u0433 \u0435\u0441\u0442\u044C \u0441\u0435\u0439\u0447\u0430\u0441, \u043D\u043E \u0438 \u0447\u0442\u043E \u043F\u0440\u043E\u0438\u0437\u043E\u0439\u0434\u0451\u0442 \u0434\u0430\u043B\u044C\u0448\u0435.",metric:"\u043F\u043B\u0430\u043D-\u0444\u0430\u043A\u0442",metricLabel:"\u0444\u0438\u043D\u0430\u043D\u0441\u043E\u0432\u0430\u044F \u043A\u0430\u0440\u0442\u0438\u043D\u0430",screen:"\u0424\u0438\u043D\u0430\u043D\u0441\u043E\u0432\u044B\u0439 \u043E\u0442\u0447\u0451\u0442"},{name:"\u0411\u0443\u0445\u0433\u0430\u043B\u0442\u0435\u0440\u0438\u044F / \u043A\u0430\u0434\u0440\u044B",eyebrow:"\u041D\u0430\u043B\u043E\u0433\u0438, \u043E\u0442\u0447\u0451\u0442\u043D\u043E\u0441\u0442\u044C \u0438 \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B",headline:"\u041E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0441\u0440\u043E\u043A\u0438 \u043D\u0435 \u0434\u0435\u0440\u0436\u0430\u0442 \u0432 \u0433\u043E\u043B\u043E\u0432\u0435.",summary:"\u041D\u0430\u043B\u043E\u0433\u0438, \u043E\u0442\u0447\u0451\u0442\u043D\u043E\u0441\u0442\u044C \u0438 \u043A\u0430\u0434\u0440\u043E\u0432\u044B\u0435 \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B \u0441\u043E\u0431\u0440\u0430\u043D\u044B \u0432 \u043A\u0430\u043B\u0435\u043D\u0434\u0430\u0440\u0435, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u0441\u0440\u043E\u043A \u0438 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439 \u0448\u0430\u0433.",points:["\u041A\u0430\u043B\u0435\u043D\u0434\u0430\u0440\u044C \u0431\u0443\u0445\u0433\u0430\u043B\u0442\u0435\u0440\u0430","\u041A\u0430\u0434\u0440\u043E\u0432\u044B\u0435 \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B","\u0421\u043E\u0437\u0434\u0430\u043D\u0438\u0435 \u043E\u0442\u0447\u0451\u0442\u043E\u0432"],result:"\u0420\u0443\u0442\u0438\u043D\u0430 \u043F\u0440\u0435\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0441\u044F \u0432 \u043F\u043E\u043D\u044F\u0442\u043D\u0443\u044E \u043F\u043E\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0439 \u0431\u0435\u0437 \u043F\u0440\u043E\u043F\u0443\u0449\u0435\u043D\u043D\u044B\u0445 \u043E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u0441\u0442\u0432.",metric:"\u0432 \u0441\u0440\u043E\u043A",metricLabel:"\u043E\u0442\u0447\u0451\u0442\u044B \u0438 \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B",screen:"\u041A\u0430\u043B\u0435\u043D\u0434\u0430\u0440\u044C \u0431\u0443\u0445\u0433\u0430\u043B\u0442\u0435\u0440\u0430"}];
+
+  function i0(){let u=document.querySelector("#system.os-showcase-screen");if(!u)return()=>{};let i=u.querySelector("[data-os-stage]"),o=u.querySelector("[data-os-workspace]"),r=u.querySelector("[data-os-launch]"),p=u.querySelectorAll("[data-os-exit]"),n=u.querySelector("[data-os-next]"),C=u.querySelector("[data-os-prev]"),s=u.querySelector("[data-os-swipe]"),x=Array.from(u.querySelectorAll("[data-os-module]")),_=u.querySelector("[data-os-module-screenshot]"),m=u.querySelector("[data-os-generic-screen]"),g=u.querySelector(".os-demo-screen");if(!i||!o||!r||!n||!C||!s||!_||!m||!g)return()=>{};let c=0,y=0,k=0,d=D=>u.querySelector(D),f=D=>{c=Math.max(0,Math.min(D,F.length-1));let A=F[c];d("[data-os-current]").textContent=String(c+1).padStart(2,"0"),d("[data-os-eyebrow]").textContent=A.eyebrow,d("[data-os-headline]").textContent=A.headline,d("[data-os-summary]").textContent=A.summary;let U=d("[data-os-points]");U&&(U.innerHTML=A.points.map(t=>`<li>${t}</li>`).join("")),d("[data-os-result]").textContent=A.result,d("[data-os-metric]").textContent=A.metric,d("[data-os-metric-label]").textContent=A.metricLabel,d("[data-os-screen-name]").textContent=A.screen,d("[data-os-ui-title]").textContent=A.name,d("[data-os-ui-metric]").textContent=c===0?"\u0412 \u043D\u043E\u0440\u043C\u0435":"\u0420\u0430\u0431\u043E\u0442\u0430\u0435\u0442";let M=c===1;_.hidden=!M,m.hidden=M,g.classList.toggle("has-real-screenshot",M);let a=d("[data-os-progress]");a&&(a.style.width=`${(c+1)/F.length*100}%`),x.forEach((t,l)=>{t.classList.toggle("is-active",l===c),t.setAttribute("aria-current",l===c?"true":"false")}),C.disabled=c===0,n.innerHTML=c===F.length-1?"\u0417\u0430\u0432\u0435\u0440\u0448\u0438\u0442\u044C \u043E\u0431\u0437\u043E\u0440 <span>\u2192</span>":"\u0421\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439 \u043C\u043E\u0434\u0443\u043B\u044C <span>\u2192</span>",i.classList.add("is-changing"),requestAnimationFrame(()=>requestAnimationFrame(()=>i.classList.remove("is-changing")))},S=()=>{window.clearTimeout(y),i.classList.add("is-loading"),y=window.setTimeout(()=>{i.classList.remove("is-loading"),i.classList.add("is-open"),o.setAttribute("aria-hidden","false"),f(0)},900)},b=()=>{window.clearTimeout(y),i.classList.remove("is-loading","is-open"),o.setAttribute("aria-hidden","true"),c=0},P=()=>c===F.length-1?b():f(c+1),$=()=>f(c-1);r.addEventListener("click",S),n.addEventListener("click",P),C.addEventListener("click",$),p.forEach(D=>D.addEventListener("click",b)),x.forEach(D=>D.addEventListener("click",()=>f(Number(D.dataset.osModule))));let H=D=>{i.classList.contains("is-open")&&(D.key==="ArrowRight"&&P(),D.key==="ArrowLeft"&&$(),D.key==="Escape"&&b())},X=D=>{k=D.changedTouches[0]?.clientX??0},j=D=>{let A=(D.changedTouches[0]?.clientX??k)-k;Math.abs(A)<55||(A<0?P():$())};return window.addEventListener("keydown",H),s.addEventListener("touchstart",X,{passive:!0}),s.addEventListener("touchend",j,{passive:!0}),()=>{window.clearTimeout(y),r.removeEventListener("click",S),n.removeEventListener("click",P),C.removeEventListener("click",$),window.removeEventListener("keydown",H),s.removeEventListener("touchstart",X),s.removeEventListener("touchend",j)}}
+
+  const employeeModuleCopy = {
+    eyebrow: "Сотрудники: полный цикл",
+    headline: "Управление сотрудниками от вакансий до премий.",
+    summary: "Система оценивает анкеты соискателей и помогает приглашать лучших, организует стажировку от графика до контроля успеваемости, формирует документы при найме, составляет смены и автоматически считает зарплату. А работа менеджера оцифрована через игру в реальном времени и начисляет игровые премии.",
+    points: [
+      "Оценка анкет и приглашение лучших соискателей",
+      "Стажировка: график и контроль успеваемости",
+      "Автоматическое формирование документов при найме",
+      "Составление графика смен",
+      "Автоматический расчёт зарплаты",
+      "Игровой режим результатов работы менеджера в реальном времени",
+    ],
+    result: "Партнёр не собирает кадровый процесс по таблицам и чатам: система ведёт каждый этап и показывает результат каждого сотрудника.",
+    metric: "1 модуль",
+    metricLabel: "от вакансии до мотивации",
+    screen: "Управление сотрудниками",
+  };
+
+  const knowledgeModulePoints = [
+    "Все процессы работы для менеджера и управляющего",
+    "Короткие инструкции для ежедневной работы",
+    "Система контроля обучения и квалификации сотрудников",
+    "ИИ-наставник, дает точные ответы на любой вопрос",
+  ];
+
+  const knowledgeScreenMarkup = `
+    <div class="os-knowledge-screen" data-os-knowledge-screen hidden aria-label="Экран базы знаний и ИИ-помощника">
+      <div class="os-knowledge-layout">
+        <nav class="os-knowledge-menu" aria-label="Оглавление базы знаний">
+          <ul>
+            <li class="is-active">Работа с печатным оборудованием</li>
+            <li>Съёмка на документы</li>
+            <li>Производство подарочных сувениров</li>
+            <li>Работа в системе учёта бизнеса</li>
+            <li>Чек-лист смены</li>
+            <li>Курс управляющего центром</li>
+            <li>Курс по обслуживанию и продажам</li>
+          </ul>
+        </nav>
+        <div class="os-knowledge-workspace">
+          <article class="os-knowledge-article">
+            <div class="os-knowledge-article-head">
+              <div><span>Оборудование / лазерный принтер</span><strong>Технология ч/б печати</strong></div>
+              <i aria-hidden="true">•••</i>
+            </div>
+            <div class="os-knowledge-blurred" aria-hidden="true">
+              <b>Подготовка оборудования и рабочего файла</b>
+              <p>Перед началом работы проверьте настройки оборудования, параметры макета и выбранный материал. Последовательно выполните действия технологической карты.</p>
+              <p>Зафиксируйте результат проверки, запустите производство и проконтролируйте качество готового изделия.</p>
+            </div>
+            <div class="os-knowledge-lock"><i aria-hidden="true">⌁</i><span>Содержание статьи скрыто<br/><small>показываем структуру системы</small></span></div>
+          </article>
+          <aside class="os-ai-assistant" aria-label="Пример ответа ИИ-помощника">
+            <div class="os-ai-chat-head"><strong>ИИ-помощник</strong><span><i aria-hidden="true"></i> готов ответить</span></div>
+            <div class="os-ai-thread">
+              <div class="os-ai-message os-ai-message-user"><b>Менеджер</b><p>Как изготовить кружку с фото клиента?</p></div>
+              <div class="os-ai-message os-ai-message-assistant"><b>ИИ-помощник</b><p>Для стандартной сублимационной кружки используйте температуру <strong>190 °C</strong> и время <strong>180 секунд</strong> при среднем прижиме.</p><p>Распечатайте изображение зеркально на сублимационной бумаге, плотно закрепите его термоскотчем и расположите кружку в прессе так, чтобы макет полностью прилегал к поверхности. После окончания времени аккуратно снимите бумагу и дайте кружке остыть.</p><p>Перед серией сделайте один тест: разные прессы могут потребовать корректировку на 5–10 °C или 10–20 секунд.</p></div>
+            </div>
+            <div class="os-ai-input"><span>Задайте вопрос по работе…</span><b aria-hidden="true">↑</b></div>
+          </aside>
+        </div>
+      </div>
+    </div>`;
+
+  const cashScreenMarkup = `
+    <div class="os-pos-screen" data-os-pos-screen hidden aria-label="Демонстрация интерфейса умной кассы">
+      <section class="os-pos-catalog" aria-label="Каталог услуг">
+        <div class="os-pos-tools">
+          <label><span aria-hidden="true">⌕</span><input type="text" value="" placeholder="Найти услугу" aria-label="Найти услугу"/></label>
+          <button type="button" aria-label="Открыть категории">Категории <span aria-hidden="true">⌄</span></button>
+        </div>
+        <div class="os-pos-tabs" aria-label="Категории услуг">
+          <button type="button" class="is-active">Популярное</button>
+          <button type="button">Фото</button>
+          <button type="button">Печать</button>
+          <button type="button">Подарки</button>
+        </div>
+        <div class="os-pos-products">
+          <button type="button" class="is-selected"><span>Фото</span><strong>Фото на документы</strong><b>600 ₽</b></button>
+          <button type="button"><span>Печать</span><strong>Ч/б копирование</strong><b>20 ₽</b></button>
+          <button type="button"><span>Печать</span><strong>Печать фотографий</strong><b>30 ₽</b></button>
+          <button type="button"><span>Подарок</span><strong>Печать на кружке</strong><b>890 ₽</b></button>
+          <button type="button"><span>Фото</span><strong>Ретушь фотографии</strong><b>300 ₽</b></button>
+        </div>
+      </section>
+
+      <aside class="os-pos-check" aria-label="Текущий чек">
+        <div class="os-pos-check-head"><div><span>Текущий чек</span><strong>Заказ № 0428</strong></div><i>1 услуга</i></div>
+        <div class="os-pos-check-list">
+          <div><span><strong>Фото на документы</strong><small>Комплект · 4 фотографии</small></span><b>600 ₽</b></div>
+          <div class="os-pos-added" data-os-pos-added hidden><span><strong>Электронная копия</strong><small>Отправка клиенту</small></span><b>50 ₽</b></div>
+        </div>
+
+        <section class="os-pos-recommendation" aria-label="Рекомендация сотруднику">
+          <div class="os-pos-recommendation-label"><span aria-hidden="true">✦</span><b>Рекомендация системы</b></div>
+          <strong>Предложите клиенту электронную копию фотографии</strong>
+          <p>Она пригодится для Госуслуг, анкет и повторной подачи документов.</p>
+          <button type="button" data-os-pos-add><span>Добавить в чек</span><b>+50 ₽</b></button>
+        </section>
+
+        <div class="os-pos-total"><span>Итого</span><strong data-os-pos-total>600 ₽</strong></div>
+        <button type="button" class="os-pos-pay">Перейти к оплате <span>→</span></button>
+      </aside>
+    </div>`;
+
+  const customerScreenMarkup = `
+    <div class="os-customer-screen" data-os-customer-screen hidden aria-label="Демонстрация модуля базы клиентов">
+      <section class="os-customer-card os-customer-database" aria-label="Состояние клиентской базы">
+        <div class="os-customer-card-label"><span aria-hidden="true"></span><b>Клиентская база</b></div>
+        <div class="os-customer-total">
+          <div><strong>938</strong><span>клиентов в базе</span></div>
+        </div>
+        <div class="os-customer-metrics">
+          <article><small>Праздников<br/>в этом месяце</small><strong>93</strong></article>
+          <article><small>Праздников<br/>в следующем месяце</small><strong>104</strong></article>
+          <article class="is-positive"><small>Новых клиентов</small><strong>+27</strong></article>
+          <article class="is-muted"><small>Отписались</small><strong>−2</strong></article>
+        </div>
+        <div class="os-customer-note"><span aria-hidden="true">i</span><p>Система знает даты праздников клиентов и заранее формирует аудиторию для полезных уведомлений.</p></div>
+      </section>
+
+      <section class="os-customer-card os-customer-mailing" aria-label="Результат рассылки уведомлений">
+        <div class="os-customer-card-label"><span aria-hidden="true"></span><b>Уведомления</b></div>
+        <div class="os-customer-funnel">
+          <article><small>Отправлено</small><strong>23</strong><span>уведомления</span></article>
+          <i aria-hidden="true">→</i>
+          <article class="is-result"><small>Заказано</small><strong>8</strong><span>заказов</span></article>
+        </div>
+        <div class="os-customer-conversion">
+          <div><span>Заказали после уведомления</span><strong>8 из 23</strong></div>
+          <i><span style="width:34.8%"></span></i>
+        </div>
+        <div class="os-customer-campaign"><span>Ближайшая аудитория</span><strong>70 клиентов с праздником в этом месяце осталось</strong><button type="button">Подготовить уведомления <i>→</i></button></div>
+      </section>
+    </div>`;
+
+  const analyticsScreenMarkup = `
+    <div class="os-analytics-screen" data-os-analytics-screen hidden aria-label="Дашборд управляющего с показателями точки за сегодня">
+      <div class="os-analytics-kpis">
+        <article class="is-primary"><span>Клиентов сегодня</span><strong>29</strong><small><b>+12%</b> к прошлому дню</small></article>
+        <article><span>Выручка сегодня</span><strong>18 473 ₽</strong><small><b>+17%</b> к прошлому дню</small></article>
+        <article><span>Средний чек</span><strong>637 ₽</strong><small>на одного клиента</small></article>
+        <article><span>Деньги в кассе</span><strong>3 248 ₽</strong><small>доступно сейчас</small></article>
+      </div>
+
+      <div class="os-analytics-main">
+        <section class="os-analytics-chart" aria-label="Структура действий менеджера за сегодня">
+          <div class="os-analytics-section-head"><div><span>Структура по действиям менеджера</span><strong>Сегодня</strong></div><b>22 действия</b></div>
+          <div class="os-analytics-bars" aria-hidden="true">
+            <div><i style="height:64%"></i><span>Отзывы</span></div>
+            <div class="is-current"><i style="height:100%"></i><span>Клуб</span></div>
+            <div><i style="height:36%"></i><span>Подарки</span></div>
+          </div>
+          <div class="os-analytics-channels"><span><i></i>Отзывы <b>7</b></span><span><i></i>Клуб <b>11</b></span><span><i></i>Подарки <b>4</b></span></div>
+        </section>
+
+        <section class="os-analytics-team" aria-label="Структура оплат за сегодня">
+          <div class="os-analytics-section-head"><div><span>Структура по оплатам</span><strong>Сегодня</strong></div><b class="is-live"><i></i>Касса Online</b></div>
+          <div class="os-analytics-ring"><div><strong>100%</strong></div></div>
+          <div class="os-analytics-team-list">
+            <div><span><i></i>Наличные</span><strong>27%</strong></div>
+            <div><span><i></i>Карта</span><strong>34%</strong></div>
+            <div><span><i></i>QR-код</span><strong>39%</strong></div>
+          </div>
+        </section>
+      </div>
+    </div>`;
+
+  const financeScreenMarkup = `
+    <div class="os-finance-screen" data-os-finance-screen hidden aria-label="Финансовый дашборд одной точки">
+      <div class="os-finance-kpis">
+        <article class="is-primary"><span>Выручка</span><strong>487 000 ₽</strong><small><b>89%</b> от плана</small></article>
+        <article><span>Операционная прибыль</span><strong>265 911 ₽</strong><small>за текущий месяц</small></article>
+        <article><span>Рентабельность</span><strong>54,6%</strong><small>операционная</small></article>
+        <article><span>Денег на счетах</span><strong>582 000 ₽</strong><small>доступный остаток</small></article>
+      </div>
+
+      <div class="os-finance-main">
+        <section class="os-finance-pnl" aria-label="Отчёт о прибылях и убытках">
+          <div class="os-finance-head"><div><span>P&amp;L · текущий месяц</span><strong>Как образуется прибыль</strong></div><b>Август</b></div>
+          <div class="os-finance-waterfall">
+            <article class="is-revenue"><span>Выручка</span><strong>487 000 ₽</strong><i style="height:100%"></i></article>
+            <article><span>Себестоимость</span><strong>−36 733 ₽</strong><i style="height:16%"></i></article>
+            <article><span>Постоянные расходы</span><strong>−184 356 ₽</strong><i style="height:38%"></i></article>
+            <article class="is-profit"><span>Опер. прибыль</span><strong>265 911 ₽</strong><i style="height:55%"></i></article>
+          </div>
+          <div class="os-finance-planfact">
+            <div><span>План выручки</span><strong>550 000 ₽</strong></div>
+            <div><span>Факт</span><strong>487 000 ₽</strong><b>89%</b></div>
+            <i><span style="width:88.5%"></span></i>
+          </div>
+        </section>
+
+        <section class="os-finance-cash" aria-label="Движение денег и платёжный календарь">
+          <div class="os-finance-head"><div><span>Движение денег</span><strong>Денежный поток</strong></div></div>
+          <div class="os-finance-flow">
+            <article><span>Поступления</span><strong>+428 300 ₽</strong></article>
+            <article><span>Списания</span><strong>−223 538 ₽</strong></article>
+            <div><span>Чистый поток</span><strong>+204 762 ₽</strong></div>
+          </div>
+          <div class="os-finance-calendar">
+            <div class="os-finance-calendar-title"><span>Платёжный календарь</span><strong>Ближайшие платежи</strong></div>
+            <article><time>20 авг</time><span><strong>Зарплата сотрудников</strong><small>рассчитано системой</small></span><b>36 780 ₽</b></article>
+            <article><time>21 авг</time><span><strong>Аренда помещения</strong><small>обязательный платёж</small></span><b>38 000 ₽</b></article>
+            <article><time>23 авг</time><span><strong>Поставщики материалов</strong><small>расходники и бумага</small></span><b>18 600 ₽</b></article>
+          </div>
+        </section>
+      </div>
+    </div>`;
+
+  const stockScreenMarkup = `
+    <div class="os-stock-screen" data-os-stock-screen hidden aria-label="Дашборд склада и закупок одной точки">
+      <div class="os-stock-kpis">
+        <article class="is-primary"><span>Стоимость остатков</span><strong>346 423 ₽</strong><small>на складе точки</small></article>
+        <article><span>Списания</span><strong>348 ₽</strong><small>за текущий день</small></article>
+        <article><span>Заканчиваются</span><strong>3</strong><small>нужно пополнить</small></article>
+        <article><span>Поставки в пути</span><strong>2</strong><small>ближайшая — 23 августа</small></article>
+      </div>
+
+      <div class="os-stock-main">
+        <section class="os-stock-balance" aria-label="Остатки материалов">
+          <div class="os-stock-table">
+            <div class="os-stock-table-head"><span>Материал</span><span>Остаток</span><span>Хватит</span><span>Статус</span></div>
+            <article class="is-warning"><span><i>Д</i><b>Обложки для дипломных работ</b></span><strong>4 шт.</strong><em>6 дней</em><small>Заканчивается</small></article>
+            <article class="is-critical"><span><i>Л</i><b>Плёнка для ламинирования A4</b></span><strong>6 шт.</strong><em>3 дня</em><small>К закупке</small></article>
+            <article><span><i>Б</i><b>Акриловые заготовки брелоков 3×3</b></span><strong>8 шт.</strong><em>14 дней</em><small>В норме</small></article>
+            <article><span><i>А3</i><b>Матовая фотобумага A3</b></span><strong>86 листов</strong><em>21 день</em><small>В норме</small></article>
+            <article><span><i>А4</i><b>Бумага офисная A4</b></span><strong>1 981 лист</strong><em>18 дней</em><small>В норме</small></article>
+          </div>
+          <div class="os-stock-legend"><span><i></i>В норме</span><span><i></i>Заканчивается</span><span><i></i>К закупке</span></div>
+        </section>
+
+        <section class="os-stock-purchase" aria-label="Автоматически сформированная закупка">
+          <div class="os-stock-head"><div><span>Автозакупка</span><strong>Что нужно заказать</strong></div></div>
+          <div class="os-stock-auto"><span>Система рассчитала запас</span><strong>на следующие 14 дней</strong><small>На основе продаж, текущих остатков и товаров в пути.</small></div>
+          <div class="os-stock-order-list">
+            <article><span><i>✓</i><b>Плёнка для ламинирования A4</b></span><strong>30 шт.</strong><small>390 ₽</small></article>
+            <article><span><i>✓</i><b>Обложки для дипломных работ</b></span><strong>10 шт.</strong><small>1 900 ₽</small></article>
+            <article><span><i>✓</i><b>Матовая фотобумага A3</b></span><strong>50 листов</strong><small>918 ₽</small></article>
+          </div>
+          <div class="os-stock-order-total"><span>Закупка у 2 поставщиков</span><strong>3 208 ₽</strong><button type="button">Сформировать заказ <i>→</i></button></div>
+          <div class="os-stock-deliveries">
+            <div class="os-stock-deliveries-title"><span>Заказанные поставки</span><strong>Что уже едет</strong></div>
+            <article><time>23 авг</time><span><strong>Плёнка и обложки</strong><small>Заказ №241</small></span><b>В пути</b></article>
+            <article><time>25 авг</time><span><strong>Фотобумага и заготовки</strong><small>Заказ №238</small></span><b class="is-confirmed">Подтверждён</b></article>
+          </div>
+        </section>
+      </div>
+    </div>`;
+
+  const accountingScreenMarkup = `
+    <div class="os-accounting-screen" data-os-accounting-screen hidden aria-label="Календарь бухгалтерии и кадровой отчётности">
+      <div class="os-accounting-kpis">
+        <article class="is-primary"><span>Отчётность сдана</span><strong>3</strong><small>за текущий месяц</small></article>
+        <article><span>Предстоит сдать</span><strong>2</strong><small>ближайшая — 25 августа</small></article>
+        <article><span>НДФЛ начислено</span><strong>4 781,4 ₽</strong><small>с фонда оплаты труда</small></article>
+        <article><span>Кадровые документы</span><strong>12</strong><small>сформированы системой</small></article>
+      </div>
+
+      <div class="os-accounting-main">
+        <section class="os-accounting-calendar" aria-label="Календарь бухгалтера на август">
+          <div class="os-accounting-head"><div><span>Календарь бухгалтера</span><strong>Август 2026</strong></div><div><button type="button" aria-label="Предыдущий месяц">←</button><button type="button" aria-label="Следующий месяц">→</button></div></div>
+          <div class="os-accounting-weekdays"><span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span></div>
+          <div class="os-accounting-days">
+            <i></i><i></i><i></i><i></i><i></i><b>1</b><b>2</b>
+            <b>3</b><b>4</b><b class="is-done">5<span>✓</span></b><b>6</b><b>7</b><b>8</b><b>9</b>
+            <b>10</b><b>11</b><b class="is-done">12<span>✓</span></b><b>13</b><b>14</b><b>15</b><b>16</b>
+            <b>17</b><b class="is-done">18<span>✓</span></b><b>19</b><b>20</b><b>21</b><b>22</b><b>23</b>
+            <b>24</b><b class="is-upcoming">25<span>1</span></b><b class="is-upcoming">26<span>1</span></b><b>27</b><b class="is-important">28<span>1</span></b><b>29</b><b>30</b>
+            <b>31</b><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <div class="os-accounting-legend"><span><i></i>Сдано</span><span><i></i>Предстоит</span><span><i></i>Срок уплаты</span></div>
+        </section>
+
+        <section class="os-accounting-tasks" aria-label="Ближайшие задачи и расчёт НДФЛ">
+          <div class="os-accounting-head"><div><span>Контроль сроков</span><strong>Ближайшие задачи</strong></div></div>
+          <div class="os-accounting-ndfl"><span>Расчёт НДФЛ</span><div><p><small>Фонд оплаты труда</small><strong>36 780 ₽</strong></p><i>× 13%</i><p><small>Начислено НДФЛ</small><strong>4 781,4 ₽</strong></p></div><small>Расчёт выполнен автоматически по начислениям сотрудников.</small></div>
+          <div class="os-accounting-task-list">
+            <article><time>25 авг</time><span><strong>Уведомление по НДФЛ</strong><small>система подготовила данные</small></span><b>Готово</b></article>
+            <article><time>26 авг</time><span><strong>ЕФС-1 · кадровые мероприятия</strong><small>проверка перед отправкой</small></span><b>Проверить</b></article>
+            <article class="is-payment"><time>28 авг</time><span><strong>Уплата НДФЛ</strong><small>сумма рассчитана</small></span><b>4 781,4 ₽</b></article>
+          </div>
+        </section>
+      </div>
+    </div>`;
+
+  const initOsModuleEnhancements = () => {
+    const section = document.querySelector("#system");
+    const analyticsButton = section?.querySelector('[data-os-module="0"]');
+    const employeeButton = section?.querySelector('[data-os-module="1"]');
+    const knowledgeButton = section?.querySelector('[data-os-module="2"]');
+    const cashButton = section?.querySelector('[data-os-module="3"]');
+    const customerButton = section?.querySelector('[data-os-module="4"]');
+    const stockButton = section?.querySelector('[data-os-module="5"]');
+    const financeButton = section?.querySelector('[data-os-module="6"]');
+    const accountingButton = section?.querySelector('[data-os-module="7"]');
+    const demoScreen = section?.querySelector(".os-demo-screen");
+    if (!section || !analyticsButton || !employeeButton || !knowledgeButton || !cashButton || !customerButton || !stockButton || !financeButton || !accountingButton || !demoScreen || section.dataset.osEnhancementsBound === "true") return;
+    section.dataset.osEnhancementsBound = "true";
+    const analyticsButtonLabel = analyticsButton.querySelector("b");
+    if (analyticsButtonLabel) analyticsButtonLabel.textContent = "Управляющий";
+    const buttonLabel = employeeButton.querySelector("b");
+    if (buttonLabel) buttonLabel.textContent = "Сотрудники";
+    const accountingButtonLabel = accountingButton.querySelector("b");
+    if (accountingButtonLabel) accountingButtonLabel.textContent = "Бухгалтерия";
+    if (!demoScreen.querySelector("[data-os-knowledge-screen]")) demoScreen.insertAdjacentHTML("beforeend", knowledgeScreenMarkup);
+    if (!demoScreen.querySelector("[data-os-pos-screen]")) demoScreen.insertAdjacentHTML("beforeend", cashScreenMarkup);
+    if (!demoScreen.querySelector("[data-os-customer-screen]")) demoScreen.insertAdjacentHTML("beforeend", customerScreenMarkup);
+    if (!demoScreen.querySelector("[data-os-analytics-screen]")) demoScreen.insertAdjacentHTML("beforeend", analyticsScreenMarkup);
+    if (!demoScreen.querySelector("[data-os-finance-screen]")) demoScreen.insertAdjacentHTML("beforeend", financeScreenMarkup);
+    if (!demoScreen.querySelector("[data-os-stock-screen]")) demoScreen.insertAdjacentHTML("beforeend", stockScreenMarkup);
+    if (!demoScreen.querySelector("[data-os-accounting-screen]")) demoScreen.insertAdjacentHTML("beforeend", accountingScreenMarkup);
+
+    const addRecommendation = section.querySelector("[data-os-pos-add]");
+    addRecommendation?.addEventListener("click", () => {
+      const addedItem = section.querySelector("[data-os-pos-added]");
+      const total = section.querySelector("[data-os-pos-total]");
+      if (addedItem) addedItem.hidden = false;
+      if (total) total.textContent = "650 ₽";
+      addRecommendation.classList.add("is-added");
+      addRecommendation.innerHTML = '<span>Добавлено в чек</span><b>✓</b>';
+    });
+
+    const setText = (selector, value) => {
+      const field = section.querySelector(selector);
+      if (field) field.textContent = value;
+    };
+    const applyEnhancements = () => {
+      const story = section.querySelector(".os-demo-story");
+      const employeeScreenshot = section.querySelector("[data-os-module-screenshot]");
+      const genericScreen = section.querySelector("[data-os-generic-screen]");
+      const knowledgeScreen = section.querySelector("[data-os-knowledge-screen]");
+      const cashScreen = section.querySelector("[data-os-pos-screen]");
+      const customerScreen = section.querySelector("[data-os-customer-screen]");
+      const analyticsScreen = section.querySelector("[data-os-analytics-screen]");
+      const financeScreen = section.querySelector("[data-os-finance-screen]");
+      const stockScreen = section.querySelector("[data-os-stock-screen]");
+      const accountingScreen = section.querySelector("[data-os-accounting-screen]");
+      const isAnalyticsModule = analyticsButton.classList.contains("is-active");
+      const isEmployeeModule = employeeButton.classList.contains("is-active");
+      const isKnowledgeModule = knowledgeButton.classList.contains("is-active");
+      const isCashModule = cashButton.classList.contains("is-active");
+      const isCustomerModule = customerButton.classList.contains("is-active");
+      const isFinanceModule = financeButton.classList.contains("is-active");
+      const isStockModule = stockButton.classList.contains("is-active");
+      const isAccountingModule = accountingButton.classList.contains("is-active");
+      story?.classList.toggle("is-employee-module", isEmployeeModule);
+      demoScreen.classList.toggle("has-knowledge-screen", isKnowledgeModule);
+      demoScreen.classList.toggle("has-pos-screen", isCashModule);
+      demoScreen.classList.toggle("has-customer-screen", isCustomerModule);
+      demoScreen.classList.toggle("has-analytics-screen", isAnalyticsModule);
+      demoScreen.classList.toggle("has-finance-screen", isFinanceModule);
+      demoScreen.classList.toggle("has-stock-screen", isStockModule);
+      demoScreen.classList.toggle("has-accounting-screen", isAccountingModule);
+      if (knowledgeScreen) knowledgeScreen.hidden = !isKnowledgeModule;
+      if (cashScreen) cashScreen.hidden = !isCashModule;
+      if (customerScreen) customerScreen.hidden = !isCustomerModule;
+      if (analyticsScreen) analyticsScreen.hidden = !isAnalyticsModule;
+      if (financeScreen) financeScreen.hidden = !isFinanceModule;
+      if (stockScreen) stockScreen.hidden = !isStockModule;
+      if (accountingScreen) accountingScreen.hidden = !isAccountingModule;
+      if (employeeScreenshot) employeeScreenshot.hidden = !isEmployeeModule;
+      if (genericScreen) genericScreen.hidden = isAnalyticsModule || isEmployeeModule || isKnowledgeModule || isCashModule || isCustomerModule || isStockModule || isFinanceModule || isAccountingModule;
+      demoScreen.classList.toggle("has-real-screenshot", isEmployeeModule);
+
+      if (isEmployeeModule) {
+        setText("[data-os-eyebrow]", employeeModuleCopy.eyebrow);
+        setText("[data-os-headline]", employeeModuleCopy.headline);
+        setText("[data-os-summary]", employeeModuleCopy.summary);
+        setText("[data-os-result]", employeeModuleCopy.result);
+        setText("[data-os-metric]", employeeModuleCopy.metric);
+        setText("[data-os-metric-label]", employeeModuleCopy.metricLabel);
+        setText("[data-os-screen-name]", employeeModuleCopy.screen);
+        setText("[data-os-ui-title]", "Сотрудники");
+        const points = section.querySelector("[data-os-points]");
+        if (points) points.innerHTML = employeeModuleCopy.points.map((point) => `<li>${point}</li>`).join("");
+      } else if (isKnowledgeModule) {
+        const points = section.querySelector("[data-os-points]");
+        if (points) points.innerHTML = knowledgeModulePoints.map((point, index) => (
+          `<li${index === knowledgeModulePoints.length - 1 ? ' class="is-accent"' : ""}>${point}</li>`
+        )).join("");
+      } else if (isCustomerModule) {
+        setText("[data-os-headline]", "Система возвращает клиентов.");
+      } else if (isFinanceModule) {
+        const points = section.querySelector("[data-os-points]");
+        if (points) points.innerHTML = [
+          "Контролируем каждую копейку, чтобы быть эффективными",
+          "Следим за каждым платежом, чтобы ничего не пропустить",
+          "Строим план, отслеживаем факт",
+        ].map((point) => `<li>${point}</li>`).join("");
+      } else if (isStockModule) {
+        setText("[data-os-headline]", "Управляем закупками так, чтобы ничего не кончилось.");
+        const points = section.querySelector("[data-os-points]");
+        if (points) points.innerHTML = [
+          "Система каждый день следит за остатками",
+          "Контролируем списание",
+          "Формируем готовый список закупки",
+        ].map((point) => `<li>${point}</li>`).join("");
+      } else if (isAccountingModule) {
+        setText("[data-os-headline]", "Бухгалтерия под контролем — отдельный бухгалтер не нужен.");
+        const points = section.querySelector("[data-os-points]");
+        if (points) points.innerHTML = [
+          "Формируем и напоминаем о бухгалтерских событиях",
+          "Автоматически формируем все кадровые документы",
+          "Создаём и отправляем отчёты",
+        ].map((point) => `<li>${point}</li>`).join("");
+      }
+    };
+
+    const observer = new MutationObserver(() => window.requestAnimationFrame(applyEnhancements));
+    [analyticsButton, employeeButton, knowledgeButton, cashButton, customerButton, stockButton, financeButton, accountingButton].forEach((button) => observer.observe(button, {
+      attributes: true, attributeFilter: ["class", "aria-current"],
+    }));
+    section.addEventListener("click", () => window.requestAnimationFrame(applyEnhancements));
+    section.addEventListener("keyup", () => window.requestAnimationFrame(applyEnhancements));
+    applyEnhancements();
+  };
+
+  const hasRequiredOsMarkup = (section) => [
+    "[data-os-stage]",
+    "[data-os-workspace]",
+    "[data-os-launch]",
+    "[data-os-next]",
+    "[data-os-prev]",
+    "[data-os-swipe]",
+    "[data-os-module-screenshot]",
+    "[data-os-generic-screen]",
+    ".os-demo-screen",
+  ].every((selector) => section.querySelector(selector));
+
+  const initRaspechatkaOs = () => {
+    const section = document.querySelector("#system.os-showcase-screen");
+    if (!section || section.dataset.osOnlyBound === "true") return Boolean(section);
+
+    // Tilda can add/render the T123 block after our script has already executed.
+    // Do not mark the module as initialized until all required markup exists.
+    if (!hasRequiredOsMarkup(section)) return false;
+
+    i0();
+    initOsModuleEnhancements();
+    section.dataset.osOnlyBound = "true";
+    return true;
+  };
+
+  const bootRaspechatkaOs = () => {
+    if (initRaspechatkaOs()) return;
+
+    const root = document.body || document.documentElement;
+    if (!root) return;
+
+    // Retry when Tilda inserts/rebuilds the block after DOMContentLoaded.
+    const observer = new MutationObserver(() => {
+      if (initRaspechatkaOs()) observer.disconnect();
+    });
+    observer.observe(root, { childList: true, subtree: true });
+
+    // Safety retry for delayed Tilda initialisation that does not add a new root node.
+    let attempts = 0;
+    const retry = window.setInterval(() => {
+      attempts += 1;
+      if (initRaspechatkaOs() || attempts >= 40) {
+        window.clearInterval(retry);
+        observer.disconnect();
+      }
+    }, 250);
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", bootRaspechatkaOs, { once: true });
+  } else {
+    bootRaspechatkaOs();
+  }
+})();
