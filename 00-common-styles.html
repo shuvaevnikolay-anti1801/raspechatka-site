@@ -2136,4 +2136,79 @@ html, body { margin: 0 !important; }
   }
 }
 
+
+/* Screen 03: balanced landscape-tablet composition. */
+@media (min-width: 960px) and (max-width: 1180px) {
+  #economy .demand-proof-board {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  #economy .demand-audience {
+    padding: 26px 30px 28px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(17, 19, 15, .24);
+  }
+
+  #economy .demand-proof-board h3 {
+    min-height: 0;
+    margin-bottom: 18px;
+  }
+
+  #economy .demand-audience-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  #economy .demand-audience-list > div {
+    grid-template-columns: 32px minmax(0, 1fr);
+    min-width: 0;
+    padding: 18px 20px;
+    border-right: 1px solid rgba(255, 255, 255, .14);
+    border-bottom: 0;
+  }
+
+  #economy .demand-audience-list > div:first-child {
+    padding-left: 0;
+  }
+
+  #economy .demand-audience-list > div:last-child {
+    padding-right: 0;
+    border-right: 0;
+  }
+
+  #economy .demand-audience-list small {
+    max-width: none;
+  }
+
+  #economy .demand-audience-note {
+    margin: 22px 0 0 !important;
+  }
+
+  #economy .demand-products {
+    padding: 28px 30px 30px;
+  }
+
+  #economy .demand-product-grid.product-hierarchy {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-rows: repeat(2, clamp(300px, 31vw, 360px)) !important;
+    gap: 12px;
+  }
+
+  #economy .demand-product-grid.product-hierarchy > article {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    min-width: 0;
+    min-height: 300px;
+  }
+
+  #economy .demand-product-grid .product-tile-tag {
+    right: 14px;
+    left: 14px;
+    width: auto;
+    max-width: none;
+    white-space: normal;
+  }
+}
+
 </style>
